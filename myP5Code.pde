@@ -6,7 +6,7 @@ void setup() {
 //🎯Varaible Declarations Go Here
 var x = 200;
 var y = 100;
-
+var mouth = 75;
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
   background(255,255,255,200);
@@ -24,6 +24,12 @@ void draw(){
   ellipse(x - 50, y - 50, 30, 30); // left eyeball
   ellipse(x + 50, y - 50, 30, 30); // right eyeball
   
+fill(255,0,0);//mouth
+ellipse(x,y,150,mouth);
+
+fill(0,0,0);//pupils
+ellipse(x - 50, y - 50,10,10);
+ellipse(x + 50, y - 50, 10, 10);
 
 }
 
